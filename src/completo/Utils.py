@@ -8,8 +8,8 @@ class Utils:
     def displayAllInfo(self):
         print(f"Array:\t\t\t{self.array}")
         print(f"Número:\t\t\t{self.numberValue}")
-        print(f"Base atual:\t\t{self.numberBaseCurrent}")
-        print(f"Base desejada:\t\t{self.numberBaseTarget}")
+        print(f"Base current:\t\t{self.numberBaseCurrent}")
+        print(f"Base target:\t\t{self.numberBaseTarget}")
         print(f"-------------------------------------------")
 
     def displayResult(self, result):
@@ -31,7 +31,7 @@ class Utils:
             aux = divisionInteger
             i += 1
 
-            print(f"{aux} / {self.numberBaseTarget} = {amount}\tResto:\t{rest}")
+            print(f"{aux} / {self.numberBaseTarget} = {amount}\tRest:\t{rest}")
         
         arrayInverted = list(reversed(arrayNormal))
         self.convertArrayWithNumbersToLetters(arrayInverted)
@@ -51,17 +51,16 @@ class Utils:
         return amount
 
     def convertArrayWithLettersToNumbers(arrayAux):
-
         i = 0
-        #Pesquise cada elemento na lista para substituir o valor da letra pelo número
-        while i < len(arrayAux):
 
-            if arrayAux[i] == "A": arrayAux[i] = "10"
-            elif arrayAux[i] == "B": arrayAux[i] = "11"
-            elif arrayAux[i] == "C": arrayAux[i] = "12"
-            elif arrayAux[i] == "D": arrayAux[i] = "13"
-            elif arrayAux[i] == "E": arrayAux[i] = "14"
-            elif arrayAux[i] == "F": arrayAux[i] = "15"
+       #Pesquise cada elemento na lista para substituir o valor da letra pelo número
+        while i < len(arrayAux):
+            if arrayAux[i] == "A": arrayAux[i] = 10
+            elif arrayAux[i] == "B": arrayAux[i] = 11
+            elif arrayAux[i] == "C": arrayAux[i] = 12
+            elif arrayAux[i] == "D": arrayAux[i] = 13
+            elif arrayAux[i] == "E": arrayAux[i] = 14
+            elif arrayAux[i] == "F": arrayAux[i] = 15
             elif arrayAux[i] == "G": arrayAux[i] = 16
             elif arrayAux[i] == "H": arrayAux[i] = 17
             elif arrayAux[i] == "I": arrayAux[i] = 18
@@ -84,10 +83,11 @@ class Utils:
         return arrayAux
 
     def convertArrayWithNumbersToLetters(self, arrayAux):
-        print(f"\nAntes: {arrayAux}\n")
+        print(f"\nBefore: {arrayAux}\n")
 
         i = 0
 
+        #Pesquise cada elemento na lista para substituir o valor da letra pelo número
         while i < len(arrayAux):
             print(f"{i} = {arrayAux[i]}")
             if arrayAux[i] == 10: arrayAux[i] = "A"
@@ -116,5 +116,5 @@ class Utils:
 
             i += 1
         
-        print(f"\nDepois: {arrayAux}")
+        print(f"\nAfter: {arrayAux}")
         return arrayAux

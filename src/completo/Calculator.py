@@ -34,6 +34,6 @@ class Calculator:
             elif self.numberBaseCurrent >= self.numberBaseTarget:
                 result = callingUtils.convertBaseMethodDivider(self.numberValue)
 
-        #Resultados
+        #Display results
         callingUtils.displayResult(result)
         return result
