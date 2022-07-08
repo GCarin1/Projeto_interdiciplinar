@@ -1,17 +1,5 @@
 # Projeto Interdisciplinar
 
-## Integrantes
-<html>
-    <section>
-        <ul>
-            <li>Guilherme Carini RGM: 20224435 </li>
-            <li>Gabriel Pena RGM: 18777651</li>
-            <li>Ayrton Feliciano RGM: 29641977</li>
-            <li>Nathan de Oliveira RGM: 30271754</li>
-            <li>Nikolas Yan da Silva RGM: 29908027</li>
-        </ul>
-    </section>
-</html>
 
 ## 1- Motivação
 ```bash
